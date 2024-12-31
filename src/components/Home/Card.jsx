@@ -2,10 +2,10 @@ import React, { useContext, useState } from 'react'
 import Image from 'next/image'
 import { CartContext} from '@/utils/ContextReducer'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+// import { usePathname } from 'next/navigation'
 
 const Card = (props) => {
-  const pathname=usePathname();
+  // const pathname=usePathname();
 // const size=["small","medium","large"]
 const data=props.foodData;
 const {state,dispatch}=useContext(CartContext)
