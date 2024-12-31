@@ -15,10 +15,10 @@ const CarouselComponents = () => {
       showStatus={false}>
 
         {
-        images.map((imglink)=>{
+        images.map((imglink,index)=>{
           return(
             <>
-<div className='flex items-center justify-center brightness-50 w-full' style={{ maxHeight: "36rem", overflow: "hidden" }}>
+<div key={index} className='flex items-center justify-center brightness-50 w-full' style={{ maxHeight: "36rem", overflow: "hidden" }}>
   <img src={imglink} alt="pizza" className="max-w-full max-h-full" />
 </div>
 
