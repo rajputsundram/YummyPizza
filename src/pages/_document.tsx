@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       
         <Head>
-          <title>FoodR</title>
+          <title>Yummy-Pizza</title>
         </Head>
       <body className="antialiased">
         <Main />
