@@ -4,7 +4,7 @@ import jwt from  "jsonwebtoken"
 import db from "../../utils/db"
 
 
-const jwtSecret="s2aqwertych$0tu"
+const jwtSecret=process.env.jwtSecret
 export default async function handler(req, res){
     let success=false;
     const salt= await  bcrypt.genSalt(10);

@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs"
 import jwt from  "jsonwebtoken"
 export default async function handler(req,res)
 {
-    const jwtSecret="s2aqwertych$0tu";
+    const jwtSecret=process.env.jwtSecret;
     let success =false;
     if(req.method==="POST")
     {
